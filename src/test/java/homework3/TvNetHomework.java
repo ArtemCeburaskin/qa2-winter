@@ -40,12 +40,12 @@ public class TvNetHomework {
                 String title2 = browser.findElement(ARTICLE_TITLE_PAGE).getText();
 
                 if(!title1.equals(title2)) {
-                    if(title2.length() == title1.length() + 4 ){
+                    if(title2.length() + 4  == title1.length()){
                         String title11 = title1.substring(0, title1.length() - 4);
                         System.out.println(title11.equals(title2));
                         System.out.println("Titles are equal - 1 digit number of comments");
                     }
-                    if(title2.length() == title1.length() + 5 ){
+                    if(title2.length() + 5 == title1.length()){
                         String title12 = title1.substring(0, title1.length() - 5);
                         System.out.println(title12.equals(title2));
                         System.out.println("Titles are equal - 2 digit number of comments");
